@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     
@@ -63,7 +64,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let posterPath = movie["poster_path"] as! String
         let posterUrl = URL (string: baseURL + posterPath )
         
-        
+        cell.PosterView.af_setImage(withURL: posterUrl!) // give me the URL and i ll eventually take care of dowloading it and setting the image 
         return cell
         
     }
