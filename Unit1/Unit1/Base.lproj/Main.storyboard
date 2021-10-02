@@ -163,9 +163,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="H7b-Y3-0by">
-                                <rect key="frame" x="0.0" y="88" width="190" height="257"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="H7b-Y3-0by">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BG0-dc-bye">
                                     <size key="itemSize" width="188" height="269"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -174,7 +173,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="MovieGridCell" id="e9C-7g-buR" customClass="MovieGridCell" customModule="Unit1" customModuleProvider="target">
-                                        <rect key="frame" x="1" y="0.0" width="188" height="269"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="269"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WnO-YL-e78">
                                             <rect key="frame" x="0.0" y="0.0" width="188" height="269"/>
@@ -199,6 +198,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DTp-px-hVh"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DTp-px-hVh" firstAttribute="trailing" secondItem="H7b-Y3-0by" secondAttribute="trailing" id="Jlk-pV-jg4"/>
+                            <constraint firstItem="H7b-Y3-0by" firstAttribute="top" secondItem="iFt-dd-E8w" secondAttribute="top" id="Ojc-en-2rF"/>
+                            <constraint firstItem="DTp-px-hVh" firstAttribute="trailing" secondItem="H7b-Y3-0by" secondAttribute="trailing" id="XDi-Mf-WOG"/>
+                            <constraint firstItem="DTp-px-hVh" firstAttribute="bottom" secondItem="H7b-Y3-0by" secondAttribute="bottom" id="hWT-wE-3fu"/>
+                            <constraint firstItem="DTp-px-hVh" firstAttribute="bottom" secondItem="H7b-Y3-0by" secondAttribute="bottom" id="sUG-ZA-4Om"/>
+                            <constraint firstItem="H7b-Y3-0by" firstAttribute="leading" secondItem="DTp-px-hVh" secondAttribute="leading" id="zGt-Hj-Qgh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Superhero " id="2xZ-vI-TqG"/>
                     <connections>
